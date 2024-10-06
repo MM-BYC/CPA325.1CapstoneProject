@@ -30,18 +30,32 @@ cd CPA325.1CapstoneProject
    * "start": "node server.js",
    * "dev"" "nodemon server.js"
 4. create .env
-    PORT=
-    DB_URL=
-    SECRET=
+   * PORT= 
 5. Test server is running.
    * npm start
 ```
    ![npm start to run the server](npmstart.png)
 
-### Establish Database
+- [x] Establish Database
 ```
 1. create folder config
-2. create file connectToDb
+    1.1. create file connectToDb
+        o require("dotenv").config()
+        o const mongoose = require('mongoose');
+        o const connectToDb = async() => {
+            await mongoose.connect(process.env.DB_URL);
+            console.log(`DataBase_Connected`)
+        }
+        o module.exports = connectToDb
+2. edit .env
+    * DB_URL=mongodb+srv://michaelmarquezusa:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
+3. edit server.js
+    * const connectToDb = require('./config/connectToDb')
+    * connectToDb()
+4. create folder models
+    4.1 create file user.js
+    
+
 
 
 ```
