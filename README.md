@@ -13,7 +13,7 @@ cd CPA325.1CapstoneProject
     git push -u origin main
 ```
 ## Backend 
-- [x] ### Create Server 
+- [x] Create Server 
 
 ```
 1. cd backend
