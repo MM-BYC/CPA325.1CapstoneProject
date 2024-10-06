@@ -1,4 +1,4 @@
-## Initial Commit
+## Initial Commit  🇺🇸
 ```
 mkdir CPA325.1CapstoneProject
 mkdir 
@@ -17,24 +17,22 @@ cd CPA325.1CapstoneProject
 
 ```
 1. cd backend
-   ➡️ npm init -y
-   ➡️ npm i express mongoose dotenv nodemon cookie-parser
-   :us:
-   🇺🇸
+    ▶️ npm init -y
+    ▶️ npm i express mongoose dotenv nodemon   
     
 2. create server.js
-   * const express= require('express')
-   * const app = express()
-   * const PORT = process.env.PORT || 3000
-   * app.listen(PORT,()=>{
+   ▶️ const express= require('express')
+   ▶️ const app = express()
+   ▶️ const PORT = process.env.PORT || 3000
+   ▶️ app.listen(PORT,()=>{
         console.log(`Listening on port: ${PORT}`)
 3. Edit package.json 
-   * "start": "node server.js",
-   * "dev"" "nodemon server.js"
+   ▶️ "start": "node server.js",
+   ▶️ "dev"" "nodemon server.js"
 4. create .env
-   * PORT= 
+   ▶️ PORT= 
 5. Test server is running.
-   * npm start
+   ▶️ npm start
 ```
    ![npm start to run the server](npmstart.png)
 
