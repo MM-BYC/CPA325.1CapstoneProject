@@ -21,6 +21,11 @@ cd CPA325.1CapstoneProject
    * npm i express mongoose dotenv nodemon cookie-parser
     
 2. create server.js
+   * const express= require('express')
+   * const app = express()
+   * const PORT = process.env.PORT || 3000
+   * app.listen(PORT,()=>{
+        console.log(`Listening on port: ${PORT}`)
 3. Edit package.json 
    * "start": "node server.js",
    * "dev"" "nodemon server.js"
@@ -35,5 +40,8 @@ cd CPA325.1CapstoneProject
 
 ### Establish Database
 ```
+1. create folder config
+2. create file connectToDb
+
 
 ```
