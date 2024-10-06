@@ -1,4 +1,17 @@
 ## Initial Commit
+```
+mkdir CPA325.1CapstoneProject
+mkdir 
+    CPA325.1CapstoneProject/frontend 
+    CPA325.1CapstoneProject/backend
+cd CPA325.1CapstoneProject
+    git init at this level
+    git add .
+    git commit -m ''
+    git remote add origin <repo>
+    where <repo> = https://github.com/MM-BYC/CPA325.1CapstoneProject
+    git push -u origin main
+```
 ## Backend 
 ### Create Server 
 
