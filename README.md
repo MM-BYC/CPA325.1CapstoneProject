@@ -1,16 +1,15 @@
 ## Initial Commit
 ## Backend
 ```
-cd backend
-   npm init -y
-   npm i express mongoose dotenv nodemon cookie-parser
+1. cd backend
+   * npm init -y
+   * npm i express mongoose dotenv nodemon cookie-parser
     
-   {npm audit fix --force> } this line is optional
-create server.js
-Edit package.json 
-    "start": "node server.js",
-    "dev"" "nodemon server.js"
-create .env
+2. create server.js
+3. Edit package.json 
+   * "start": "node server.js",
+   * "dev"" "nodemon server.js"
+4. create .env
     PORT=
     DB_URL=
     SECRET=
