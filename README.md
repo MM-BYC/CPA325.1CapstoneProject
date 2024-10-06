@@ -1,5 +1,7 @@
 ## Initial Commit
-## Backend
+## Backend 
+### Create Server 
+
 ```
 1. cd backend
    * npm init -y
@@ -17,3 +19,8 @@
    * npm start
 ```
    ![npm start to run the server](npmstart.png)
+
+### Establish Database
+```
+
+```
