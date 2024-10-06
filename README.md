@@ -19,7 +19,7 @@ cd CPA325.1CapstoneProject
 1. cd backend
    ➡️ npm init -y
    ➡️ npm i express mongoose dotenv nodemon cookie-parser
-   :us_outlying_islands:
+   us_outlying_islands:
     
 2. create server.js
    * const express= require('express')
