@@ -18,7 +18,8 @@ cd CPA325.1CapstoneProject
 ```
 1. cd backend
    ➡️ npm init -y
-   <span style="color:blue;">➡️</span> npm i express mongoose dotenv nodemon cookie-parser
+   ➡️ npm i express mongoose dotenv nodemon cookie-parser
+   :us_outlying_islands:
     
 2. create server.js
    * const express= require('express')
