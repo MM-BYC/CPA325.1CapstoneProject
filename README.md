@@ -40,23 +40,23 @@ cd CPA325.1CapstoneProject
 ```
 1. create folder config
     1.1. create file connectToDb
-        o require("dotenv").config()
-        o const mongoose = require('mongoose');
-        o const connectToDb = async() => {
+        ▶️ require("dotenv").config()
+        ▶️ const mongoose = require('mongoose');
+        ▶️ const connectToDb = async() => {
             await mongoose.connect(process.env.DB_URL);
             console.log(`DataBase_Connected`)
         }
-        o module.exports = connectToDb
+        ▶️ module.exports = connectToDb
 2. edit .env
-    * DB_URL=mongodb+srv://michaelmarquezusa:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
+    ▶️ DB_URL=mongodb+srv://michaelmarquezusa:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
 3. edit server.js
-    * const connectToDb = require('./config/connectToDb')
-    * connectToDb()
+    ▶️ const connectToDb = require('./config/connectToDb')
+    ▶️ connectToDb()
 4. create folder models
     4.1 create file user.js
         
-        * const mongoose = require("mongoose");
-        * const Schema = mongoose.Schema;
+        ▶️ const mongoose = require("mongoose");
+        ▶️ const Schema = mongoose.Schema;
 
 
 
