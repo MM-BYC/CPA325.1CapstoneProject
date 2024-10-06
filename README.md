@@ -13,5 +13,7 @@
     PORT=
     DB_URL=
     SECRET=
-
+5. Test server is running.
+   * npm start
+   ![npm start to run the server](npmstart.png)
 ```
