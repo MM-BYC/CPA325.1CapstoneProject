@@ -1,4 +1,4 @@
 ## Initial Commit
 ## Backend
- cd backend
-   _ npm init -y
+cd backend
+   npm init -y
