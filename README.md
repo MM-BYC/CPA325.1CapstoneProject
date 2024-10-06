@@ -53,10 +53,17 @@ cd CPA325.1CapstoneProject
     ▶️ const connectToDb = require('./config/connectToDb')
     ▶️ connectToDb()
 4. create folder models
-    4.1 create file user.js
-        
+    4.1 create file user.js        
         ▶️ const mongoose = require("mongoose");
         ▶️ const Schema = mongoose.Schema;
+        ▶️ const userSchema = new Schema({documents})
+
+    4.2 create file opendate.js
+        ▶️ const mongoose = require("mongoose");
+        ▶️ const Schema = mongoose.Schema;
+        ▶️ const userSchema = new Schema({documents})
+
+
 
 
 
