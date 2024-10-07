@@ -56,12 +56,21 @@ cd CPA325.1CapstoneProject
     4.1 create file user.js        
         ▶️ const mongoose = require("mongoose");
         ▶️ const Schema = mongoose.Schema;
-        ▶️ const userSchema = new Schema({documents})
+        ▶️ const userSchema = new Schema({
+            role: {type: String,enum: ["admin", "user"]},
+            name: {type: String, required: true},
+            email: {type: String, unique: true},
+            password: {type: String, minlength: 6}
+        })
 
     4.2 create file opendate.js
         ▶️ const mongoose = require("mongoose");
         ▶️ const Schema = mongoose.Schema;
-        ▶️ const userSchema = new Schema({documents})
+        ▶️ const userSchema = new Schema({
+
+            })
+        ▶️ const User = mongoose.model("user", userSchema);
+        ▶️ module.exports = User;
 
 
 
