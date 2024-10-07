@@ -50,6 +50,10 @@ cd CPA325.1CapstoneProject
 2. edit .env  
     Manually copy the connection string from mongoose
     ▶️ DB_URL=mongodb+srv://michaelmarquezusa:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
+```
+![manually copy mongoose string connection](copyconnectionstring.png)
+
+```
 3. edit server.js
     ▶️ const connectToDb = require('./config/connectToDb')
     ▶️ connectToDb()

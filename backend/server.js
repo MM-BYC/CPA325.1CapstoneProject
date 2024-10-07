@@ -8,5 +8,6 @@ connectToDb();
 
 //-->-->-->-->-->--> Server
 app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+  console.log("< package script: npm start >");
+  console.log(`server.js ▶️ ▶️ ▶️ Listening on port ${PORT}`);
 });
