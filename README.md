@@ -47,7 +47,8 @@ cd CPA325.1CapstoneProject
             console.log(`DataBase_Connected`)
         }
         ▶️ module.exports = connectToDb
-2. edit .env
+2. edit .env  
+    Manually copy the connection string from mongoose
     ▶️ DB_URL=mongodb+srv://michaelmarquezusa:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
 3. edit server.js
     ▶️ const connectToDb = require('./config/connectToDb')
