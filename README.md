@@ -13,7 +13,7 @@ cd CPA325.1CapstoneProject
     git push -u origin main
 ```
 ## Backend 
-- [x] Create Server 
+- [✅] Create Server 
 
 ```
 1. cd backend
@@ -34,9 +34,11 @@ cd CPA325.1CapstoneProject
 5. Test server is running.
    ▶️ npm start
 ```
+- [✅] Test the Server
+
    ![npm start to run the server](npmstart.png)
 
-- [x] Establish Database
+- [✅] Establish Database
 ```
 1. create folder config
     1.1. create file connectToDb
