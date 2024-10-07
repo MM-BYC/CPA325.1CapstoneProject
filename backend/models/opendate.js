@@ -27,3 +27,8 @@ const openDateSchema = new Schema({
   openTime: { type: String, required: true },
   timestamps: true,
 });
+
+//-->-->-->-->-->--> create the model
+const OpenDate = mongoose.model("OpenDate", OpenDateSchema);
+
+module.exports = OpenDate;

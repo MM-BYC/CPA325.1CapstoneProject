@@ -53,7 +53,8 @@ cd CPA325.1CapstoneProject
     ▶️ const connectToDb = require('./config/connectToDb')
     ▶️ connectToDb()
 4. create folder models
-    4.1 create file user.js        
+    4.1 create file user.js     
+        // stores related user informations   
         ▶️ const mongoose = require("mongoose");
         ▶️ const Schema = mongoose.Schema;
         ▶️ const userSchema = new Schema({
@@ -64,6 +65,7 @@ cd CPA325.1CapstoneProject
         })
 
     4.2 create file opendate.js
+    // stores related booked informations   
         ▶️ const mongoose = require("mongoose");
         ▶️ const Schema = mongoose.Schema;
         ▶️ const userSchema = new Schema({
@@ -72,6 +74,7 @@ cd CPA325.1CapstoneProject
         ▶️ const User = mongoose.model("user", userSchema);
         ▶️ module.exports = User;
 
+- [x] Make Routes
 
 
 
