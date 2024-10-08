@@ -13,9 +13,7 @@ cd CPA325.1CapstoneProject
     git push -u origin main
 ```
 ## Backend 
-
 [ ✅ ] Create Server 
-
 ```
 1. cd backend
     ▶️ npm init -y
@@ -35,6 +33,7 @@ cd CPA325.1CapstoneProject
 5. Test server is running.
    ▶️ npm start
 ```
+
 [ ✅ ] Test the Server
 
 ![npm start to run the server](npmstart.png)
@@ -81,8 +80,10 @@ cd CPA325.1CapstoneProject
             })
         ▶️ const User = mongoose.model("user", userSchema);
         ▶️ module.exports = User;
+```
 
 [ ✅ ] Make Controllers
+
 ```
 1. create folder controllers
     1.1 create openController.js
@@ -97,7 +98,8 @@ cd CPA325.1CapstoneProject
 
     1.2 Create file openRoute.js
 ```
-###frontend
+
+## Frontend
 
 [ ✅ ] Install React, cors 
 
