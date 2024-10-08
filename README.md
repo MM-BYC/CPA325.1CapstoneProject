@@ -98,6 +98,9 @@ cd CPA325.1CapstoneProject
 ```
 
 ## Frontend
+
+[ ✅ ] Install React, cors 
+
 ```
 1. cd frontend
     1.1. npm create vite@latest .
