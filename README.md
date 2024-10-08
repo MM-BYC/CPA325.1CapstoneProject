@@ -138,7 +138,7 @@ cd CPA325.1CapstoneProject
 
 1. cd frontend
     ▶️ npm install react-router-dom
-2.  inside index.js Build Nav.jsx
+2.  inside index.js 
     ▶️ import { BrowserRouter } from "react-router-dom";
     
     Wrap App component within.
@@ -159,3 +159,22 @@ cd CPA325.1CapstoneProject
 ```
 
 ![Build router's route in the App.jsx](buildroutersroute.png)
+
+### RFCE = React Functional Component 
+![Use RFCE in REACT components](RFCE.png)
+
+```
+ Use fragment "<> </>" as the top level below the return statement.
+
+4. Inside Nav.jsx
+    ▶️ RFCE first
+    { Link } allows users to navigate between routes without full page reloads.
+    How Link to="/settings" recognizes Route path="/settings":
+    React Router's Link component and Route component work together to enable client-side routing.
+    Here's how it works:
+    -------------------    
+    * Link component specifies the to prop, which is the URL path to navigate to (e.g., /settings).
+    * React Router's Route component specifies the path prop, which matches the URL path.
+    * When the user clicks the Link, React Router checks the to prop against the path props of all Route components.
+    * If a match is found, React Router renders the corresponding element prop (e.g., `<Settings logo={logo.settings}/>).
+``` 
