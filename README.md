@@ -1,4 +1,7 @@
-## Initial Commit  🇺🇸
+#  🇺🇸  CPA325.1 Capstone Project  🇺🇸
+===================================
+## Initial Commit [ ✅ ]
+-----------------
 ```
 mkdir CPA325.1CapstoneProject
 mkdir 
@@ -13,7 +16,9 @@ cd CPA325.1CapstoneProject
     git push -u origin main
 ```
 ## Backend 
-[ ✅ ] Create Server 
+-----------------
+# Create Server  [ ✅ ]
+ 
 ```
 1. cd backend
     ▶️ npm init -y
@@ -34,11 +39,11 @@ cd CPA325.1CapstoneProject
    ▶️ npm start
 ```
 
-[ ✅ ] Test the Server
+# Test the Server [ ✅ ] 
 
 ![npm start to run the server](npmstart.png)
 
-[ ✅ ] Establish Database
+# Establish Database [ ✅ ]
 ```
 1. create folder config
     1.1. create file connectToDb
@@ -82,7 +87,7 @@ cd CPA325.1CapstoneProject
         ▶️ module.exports = User;
 ```
 
-[ ✅ ] Make Controllers
+# Make Controllers [ ✅ ]
 
 ```
 1. create folder controllers
@@ -91,7 +96,7 @@ cd CPA325.1CapstoneProject
     1.2 create userController.js
 ```
 
-[ ✅ ] Make Routes
+# Make Routes [ ✅ ]
 ```
 1. create folder routes
     1.1 Create file userRoute.js
@@ -100,6 +105,7 @@ cd CPA325.1CapstoneProject
 ```
 
 ## Frontend
+-----------
 
 [ ✅ ] Install React, cors 
 
