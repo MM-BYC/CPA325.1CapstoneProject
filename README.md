@@ -1,7 +1,7 @@
 #  🇺🇸  CPA325.1 Capstone Project  🇺🇸
 ===================================
 ```
-author: Michael Marquez
+Author: Michael Marquez
 Project: PerScholas Capstone
 ```
 ## Initial Commit [ ✅ ]
