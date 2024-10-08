@@ -5,10 +5,10 @@ const userSchema = new Schema({
     type: String,
     require: true,
     validate: {
-      validator: (value) => ["Admin", "User"].includes(value.toLowerCase()),
+      validator: (value) => ["admin", "client"].includes(value.toLowerCase()),
       message: "{VALUE} is not a valid role",
     },
-    default: "user",
+    default: "client",
   },
   name: { type: String, require: true },
   email: {
@@ -29,6 +29,6 @@ const userSchema = new Schema({
 });
 
 //-->-->-->-->-->--> create the model
-const User = mongoose.model("user", userSchema);
+module.exports = mongoose.model("User", userSchema);
 
-module.exports = User;
+//-->-->-->-->-->--> END USER MODEL

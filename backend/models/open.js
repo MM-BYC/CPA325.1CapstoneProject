@@ -1,22 +1,26 @@
 /* 
-openDate.js 
+open.js 
+
+ref: "User" -> must be the same case from the model name
+      Mongoose.model("User", userSchema)
+
 */
 
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const User = require("./user");
 
-const openDateSchema = new Schema({
+const openSchema = new Schema({
   creator: { type: Schema.Types.ObjectId, ref: "user" },
   user: {
     type: Schema.Types.ObjectId,
-    ref: "user",
+    ref: "User",
     validate: {
       validator: async (value) => {
         const user = await User.findById(value);
-        return user.role === "user";
+        return user.role === "client";
       },
-      message: "Only users with role 'user' can book an open date",
+      message: "Only users with role 'client' can book an open date",
     },
   },
   booked: {
@@ -29,6 +33,6 @@ const openDateSchema = new Schema({
 });
 
 //-->-->-->-->-->--> create the model
-const OpenDate = mongoose.model("OpenDate", OpenDateSchema);
+module.exports = mongoose.model("Open", OpenSchema);
 
-module.exports = OpenDate;
+//-->-->-->-->-->--> END OPEN MODEL

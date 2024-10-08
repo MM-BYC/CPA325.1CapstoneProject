@@ -81,9 +81,21 @@ cd CPA325.1CapstoneProject
         ▶️ const User = mongoose.model("user", userSchema);
         ▶️ module.exports = User;
 
+[ ✅ ] Make Controllers
+```
+1. create folder controllers
+    1.1 create openController.js
+    
+    1.2 create userController.js
+
+
+```
+
 [ ✅ ] Make Routes
+```
+1. create folder routes
+    1.1 Create file userRoute.js
 
-
-
+    1.2 Create file openRoute.js
 
 ```
