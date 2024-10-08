@@ -132,9 +132,13 @@ cd CPA325.1CapstoneProject
 ```
 ### Install react-router-dom
 ```
+* BrowserRouter is the top-level router component.
+* Routes is the container for all Route components. Think <ul>
+* Route defines individual routes.                  Think <li>
+
 1. cd frontend
     ▶️ npm install react-router-dom
-2.  inside index.js
+2.  inside index.js Build Nav.jsx
     ▶️ import { BrowserRouter } from "react-router-dom";
     
     Wrap App component within.
@@ -147,6 +151,11 @@ cd CPA325.1CapstoneProject
       </StrictMode>
 
 3. Inside App.jsx
-
-
+    // Import Route and our components
+    ▶️ import { Route, Routes } from "react-router-dom";
+    ▶️ import Nav from "./components/Nav";
+    
+    Build React Router's route
 ```
+
+![Build router's route in the App.jsx](buildroutersroute.png)
