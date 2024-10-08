@@ -134,4 +134,19 @@ cd CPA325.1CapstoneProject
 ```
 1. cd frontend
     ▶️ npm install react-router-dom
+2.  inside index.js
+    ▶️ import { BrowserRouter } from "react-router-dom";
+    
+    Wrap App component within.
+
+    ▶️ <StrictMode>
+       <BrowserRouter>
+        <App />
+       </BrowserRouter>
+         {/* wrapping our app in BrwserRtr allows us to use LINK ROUTE ROUTES SWITCH components */}
+      </StrictMode>
+
+3. Inside App.jsx
+
+
 ```
