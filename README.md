@@ -96,5 +96,25 @@ cd CPA325.1CapstoneProject
 
     1.2 Create file openRoute.js
 ```
+
 ## Frontend
- 
+```
+1. cd frontend
+    1.1. npm create vite@latest .
+    1.2. npm install
+    1.3. npm run dev 
+2.  Connect frontend and backend with: 
+    2.1. Proxy goes to the frontend 
+          "proxy": "http://localhost:3000",
+    2.2. Go to the Backend
+        2.2.1.  npm install cors
+        2.2.2.  Backend server.js include
+                const cors = require('cors')
+                app.use(
+                cors({
+                    origin: true,
+                    credentials: true,
+                }));
+  
+```
+
