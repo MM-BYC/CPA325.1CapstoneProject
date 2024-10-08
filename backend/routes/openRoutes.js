@@ -13,4 +13,4 @@ router.delete("/:id", openController.deleteOpen);
 
 module.exports = router;
 
-//-->-->-->-->-->--> END ROUTES
+//-->-->-->-->-->--> END OPEN ROUTES

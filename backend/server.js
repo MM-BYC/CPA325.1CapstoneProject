@@ -2,6 +2,10 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const cors = require("cors");
+//temp
+const User = require("./models/user");
+const Open = require("./models/open");
+// temp
 console.log("< package script: npm start >");
 //-->-->-->-->-->--> Mongoose
 const connectToDb = require("./config/connectToDb");
@@ -39,14 +43,28 @@ app.use((req, res, next) => {
 
 // ----------------------------------> {Routes}
 const openRoutes = require("./routes/openRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 // General route available at the root
-app.length("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("server.js: Hello World!");
 });
 
 //use routes
-app.use("/", openRoutes);
+// app.post("/users", async (req, res) => {
+//   const user = new User(req.body);
+//   await user.save();
+//   res.send(user);
+// });
+
+// app.post("/opens", async (req, res) => {
+//   const open = new Open(req.body);
+//   await open.save();
+//   res.send(open);
+// });
+
+app.use("/opens", openRoutes);
+app.use("/users", userRoutes);
 
 //-->-->-->-->-->--> Server
 app.listen(PORT, () => {

@@ -8,8 +8,8 @@ openControllers.js
 const Open = require("../models/open");
 
 /* 
-Place all CRUD functions as {key:value} object cache to openDateController
-Accessible via chaining methods e.g. openDateController.getAllOpenDates 
+Place all CRUD functions as {key:value} object cache to openController
+Access with chaining methods e.g. openController.fetchOpens 
 */
 
 const openController = {
@@ -91,4 +91,4 @@ const openController = {
 
 module.exports = openController;
 
-//-->-->-->-->-->--> END CONTROLLER
+//-->-->-->-->-->--> END OPEN CONTROLLER
