@@ -95,13 +95,13 @@ cd CPA325.1CapstoneProject
     1.1 Create file userRoute.js
 
     1.2 Create file openRoute.js
-```
+<!-- ```
 
 ## Frontend
 
 [ ✅ ] Install React, cors 
 
-```
+``` -->
 1. cd frontend
     ▶️ npm create vite@latest .
     ▶️ npm install
