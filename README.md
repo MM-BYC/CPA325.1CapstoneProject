@@ -87,8 +87,6 @@ cd CPA325.1CapstoneProject
     1.1 create openController.js
     
     1.2 create userController.js
-
-
 ```
 
 [ ✅ ] Make Routes
@@ -97,5 +95,6 @@ cd CPA325.1CapstoneProject
     1.1 Create file userRoute.js
 
     1.2 Create file openRoute.js
-
 ```
+## Frontend
+ 
