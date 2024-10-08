@@ -13,6 +13,7 @@ cd CPA325.1CapstoneProject
     git push -u origin main
 ```
 ## Backend 
+
 [ ✅ ] Create Server 
 
 ```
@@ -36,7 +37,7 @@ cd CPA325.1CapstoneProject
 ```
 [ ✅ ] Test the Server
 
-   ![npm start to run the server](npmstart.png)
+![npm start to run the server](npmstart.png)
 
 [ ✅ ] Establish Database
 ```
@@ -51,7 +52,7 @@ cd CPA325.1CapstoneProject
         ▶️ module.exports = connectToDb
 2. edit .env  
     Manually copy the connection string from mongoose
-    ▶️ DB_URL=mongodb+srv://michaelmarquezusa:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
+    ▶️ DB_URL=mongodb+srv://<username>>:<password>@cluster0.scklh.mongodb.net/appName=capstoneProject 
 ```
 ![manually copy mongoose string connection](copyconnectionstring.png)
 
@@ -95,13 +96,12 @@ cd CPA325.1CapstoneProject
     1.1 Create file userRoute.js
 
     1.2 Create file openRoute.js
-<!-- ```
-
-## Frontend
+```
+###frontend
 
 [ ✅ ] Install React, cors 
 
-``` -->
+```
 1. cd frontend
     ▶️ npm create vite@latest .
     ▶️ npm install
