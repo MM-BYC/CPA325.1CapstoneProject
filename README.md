@@ -111,12 +111,12 @@ cd CPA325.1CapstoneProject
 ## Frontend
 -----------
 
-[ ✅ ] Install React, cors 
+### Install React, cors [ ✅ ]
 
 ```
 1. cd frontend
     ▶️ npm create vite@latest .
-    ▶️ npm install
+    ▶️ npm install 
     ▶️ npm run dev 
 2.  Connect frontend and backend with:
     2.1. Proxy goes to the frontend package.json
@@ -130,4 +130,8 @@ cd CPA325.1CapstoneProject
                     origin: true,
                     credentials: true,}));  
 ```
-
+### Install react-router-dom
+```
+1. cd frontend
+    ▶️ npm install react-router-dom
+```
