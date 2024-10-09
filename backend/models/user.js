@@ -4,14 +4,15 @@ const userSchema = new Schema(
   {
     role: {
       type: String,
-      require: true,
+      required: true,
       enum: ["admin", "client"],
       default: "client",
     },
-    name: { type: String, require: true },
+    fname: { type: String, required: true },
+    lname: { type: String, required: true },
     email: {
       type: String,
-      require: true,
+      required: true,
       unique: true,
       lowercase: true,
       trim: true,

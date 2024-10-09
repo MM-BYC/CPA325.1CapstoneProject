@@ -3,6 +3,7 @@ import "./App.css";
 //--//
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
+import SignUp from "./components/Signup";
 //---------------------------------[import Routes, Route, components]
 
 function App() {

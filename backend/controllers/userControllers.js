@@ -16,10 +16,11 @@ const userController = {
   // create new open
   createUser: async (req, res) => {
     try {
-      const { role, name, email, password } = req.body;
+      const { role, fname, lname, email, password } = req.body;
       const user = await User.create({
         role: role,
-        name: name,
+        fname: fname,
+        lname: lname,
         email: email,
         password: password,
       });
@@ -41,6 +42,7 @@ const userController = {
       res.status(400).json(error);
     }
   },
+  
   fetchUser: async (req, res) => {
     try {
       const userId = req.params.id;
@@ -59,11 +61,12 @@ const userController = {
     // 4. Retrieve updatedUser and send it as a response
     const userId = req.params.id;
     //--------------------------------(1)
-    const { role, name, email, password } = req.body;
+    const { role, fname, lname, email, password } = req.body;
     //--------------------------------(2)
-    const user = User.findByIdAndUpdate(userId, {
+    const user = await User.findByIdAndUpdate(userId, {
       role: role,
-      name: name,
+      fname: fname,
+      lname: lname,
       email: email,
       password: password,
     });

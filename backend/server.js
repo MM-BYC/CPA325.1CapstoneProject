@@ -69,6 +69,6 @@ app.use("/users", userRoutes);
 //-->-->-->-->-->--> Server
 app.listen(PORT, () => {
   console.log(
-    `server.js ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ Listening on port ${PORT}`
+    `server.js ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ ▶️ LISTENING on port ${PORT}`
   );
 });
