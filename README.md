@@ -86,7 +86,7 @@ Inside the model e.g. user.js include these:
 ```
 ### Mongoose-Unique-validator
 
-![mongoose-unique-validator working](mongoose-unqiue-validator.png)
+![mongoose-unique-validator working](mongoose-unique-validator.png)
 
 ```
 
