@@ -68,9 +68,26 @@ cd CPA325.1CapstoneProject
 3. edit server.js
     ▶️ const connectToDb = require('./config/connectToDb')
     ▶️ connectToDb()
+```
+
+### Data Models
+```    
+Field validation can enforce "unique" with a library mongoose-unique-validator 
+At the backend root folder
+    ▶️ npm i mongoose-unique-validator
+
+Inside the model e.g. user.js include these:
+
+(Place at the top)
+    ▶️ const uniqueValidator = require("mongoose-unique-validator");
+
+(Place at the bottom before module.exports)
+    ▶️ userSchema.plugin(uniqueValidator);
+
+
 4. create folder models
     4.1 create file user.js     
-        // stores related user informations   
+        // stores related user information   
         ▶️ const mongoose = require("mongoose");
         ▶️ const Schema = mongoose.Schema;
         ▶️ const userSchema = new Schema({

@@ -42,11 +42,12 @@ const userController = {
       res.status(400).json(error);
     }
   },
-  
+
   fetchUser: async (req, res) => {
     try {
       const userId = req.params.id;
-      const open = await Open.findById(userId);
+      const user = await User.findById(userId);
+      console.log("Currently fetching specific users");
       res.json({ user: user });
     } catch (error) {
       res.status(400).json(error);
