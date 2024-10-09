@@ -85,7 +85,11 @@ Inside the model e.g. user.js include these:
     ▶️ userSchema.plugin(uniqueValidator);
 ```
 ### Mongoose-Unique-validator
-
+```
+Error is catch for:
+    Password is required
+    email must be unique
+```
 ![mongoose-unique-validator working](mongoose-unique-validator.png)
 
 ```
