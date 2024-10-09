@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.classSignUp {
+  margin: 5em auto;
+
+  border-style: solid;
+  border-color: green;
+  border-width: 2px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
