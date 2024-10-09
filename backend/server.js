@@ -63,8 +63,8 @@ app.get("/", (req, res) => {
 //   res.send(open);
 // });
 
-app.use("/opens", openRoutes);
-app.use("/users", userRoutes);
+app.use("/api/opens", openRoutes);
+app.use("/api/users", userRoutes);
 
 //-->-->-->-->-->--> Server
 app.listen(PORT, () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 /*  
-import { Link } allows users to navigate between routes without full page reloads. 
+import{ Link } allows users to navigate between routes without full page reloads. 
 <Link to> this prop will be passed to the Router to look for matching path.
 e.g. <Link to="/pricing"> passed to Router will look for path="/pricing" will then render element={<Pricing/>}
 
