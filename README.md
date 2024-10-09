@@ -83,7 +83,12 @@ Inside the model e.g. user.js include these:
 
 (Place at the bottom before module.exports)
     ▶️ userSchema.plugin(uniqueValidator);
+```
+### Mongoose-Unique-validator
 
+![mongoose-unique-validator working](mongoose-unqiue-validator.png)
+
+```
 
 4. create folder models
     4.1 create file user.js     
