@@ -40,7 +40,7 @@ function SignUp() {
         data: formData,
         timeout: 30000, //30 seconds
       });
-      setServerResponse("Successfully sign up");
+      setServerResponse("Sign Up Successful");
     } catch (error) {
       if (error.response) {
         console.log(`Error response`, error.response.data);
@@ -59,32 +59,36 @@ function SignUp() {
       <div className="classSignUp">
         <h2>Sign Up </h2>
       </div>
-      <div className="classSignUp">
+      <div className="classSignUpForm">
         <form onSubmit={handleSubmit}>
-          <div>
+          {/* <div>
             <label htmlFor="role">Role : </label>
             <select name="role" value={formData.role} onChange={handleChange}>
               <option value=""> Select Role</option>
               <option value="client">Client</option>
               <option value="admin">Admin</option>
             </select>
-          </div>
+          </div> */}
           <div>
-            <label htmlFor="fname">First Name : </label>
+            <label htmlFor="fname">Name : </label>
             <input
               type="text"
               name="fname"
+              placeholder="First Name"
               value={formData.fname}
               onChange={handleChange}
+              className="input-field"
             />
-          </div>
-          <div>
-            <label htmlFor="lname">Last Name : </label>
+            {/* </div>
+          <div> */}
+            <label htmlFor="lname"> </label>
             <input
               type="text"
               name="lname"
+              placeholder="Last Name"
               value={formData.lname}
               onChange={handleChange}
+              className="input-field"
             />
           </div>
           <div>
@@ -94,6 +98,7 @@ function SignUp() {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              className="input-field"
             />
           </div>
           <div>
@@ -103,6 +108,7 @@ function SignUp() {
               name="password"
               value={formData.password}
               onChange={handleChange}
+              className="input-field"
             />
           </div>
           <div>
@@ -112,20 +118,30 @@ function SignUp() {
               name="confirmedPassword"
               value={formData.confirmedPassword}
               onChange={handleChange}
+              className="input-field"
             />
           </div>
           {passwordMismatch && <p>Passwords do not match</p>}
           <div>
-            <button type="submit" disabled={submitButtonDisbled}>
+            <button
+              type="submit"
+              className="classSignUpButton"
+              disabled={submitButtonDisbled}
+            >
               Submit
             </button>
           </div>
         </form>
-        <p>
-          Already have an account? <a href="/login">Login</a>
-        </p>
+        <div>
+          <p className="classAlreadyAMember">
+            Already a member? <a href="/login">Login</a>
+          </p>
+        </div>
       </div>
-      <div> {serverResponse && <p>{serverResponse}</p>}</div>
+      <div className="classSignUpResponse">
+        {" "}
+        {serverResponse && <p>{serverResponse}</p>}
+      </div>
     </>
   );
 }
