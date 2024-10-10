@@ -6,6 +6,9 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import SignUp from "./components/Signup";
 import Login from "./components/Login";
+import Event from "./components/Event";
+import Pricing from "./components/Pricing";
+
 //---------------------------------[import Routes, Route, components]
 
 function App() {
@@ -15,10 +18,10 @@ function App() {
     <>
       <Nav />
       <Routes>
-        {/* <Route path="/features" />
-        <Route path="/pricing" /> */}
+        <Route path="/Event" element={<Event />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Pricing" element={<Pricing />} />
       </Routes>
     </>
   );

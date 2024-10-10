@@ -53,7 +53,19 @@ const userController = {
       res.status(400).json(error);
     }
   },
-  //================================================ ▶️[READ]
+  //================================================ ▶️[READ by Id]
+
+  fetchUserByEmail: async (req, res) => {
+    try {
+      const { email, password } = req.body;
+      const user = await User.findOne({ email: email });
+      console.log("Currently fetching user by email");
+      res.json({ user: user });
+    } catch (error) {
+      res.status(400).json(error);
+    }
+  },
+  //================================================ ▶️[READ by email]
 
   updateUser: async (req, res) => {
     // 1. Get the id off the url

@@ -11,8 +11,8 @@ function Nav() {
   return (
     <>
       <div className="navbar">
-        <Link to="/Features" className="navbarItem">
-          Features
+        <Link to="/Event" className="navbarItem">
+          Events
         </Link>
 
         <Link to="/pricing" className="navbarItem">
