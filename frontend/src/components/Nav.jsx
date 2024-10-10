@@ -11,20 +11,20 @@ function Nav() {
   return (
     <>
       <div className="navbar">
+        <Link to="/login" className="navbarItem">
+          Home
+        </Link>
+
+        <Link to="/signUp" className="navbarItem">
+          Membership
+        </Link>
+
         <Link to="/Event" className="navbarItem">
           Events
         </Link>
 
         <Link to="/pricing" className="navbarItem">
           Pricing
-        </Link>
-
-        <Link to="/signUp" className="navbarItem">
-          Create a Sign Up
-        </Link>
-
-        <Link to="/login" className="navbarItem">
-          Login
         </Link>
       </div>
     </>

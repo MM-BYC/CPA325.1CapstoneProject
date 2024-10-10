@@ -57,18 +57,10 @@ function SignUp() {
   return (
     <>
       <div className="classSignUp">
-        <h2>Sign Up </h2>
+        <h2>Membership Sign Up </h2>
       </div>
       <div className="classSignUpForm">
         <form onSubmit={handleSubmit}>
-          {/* <div>
-            <label htmlFor="role">Role : </label>
-            <select name="role" value={formData.role} onChange={handleChange}>
-              <option value=""> Select Role</option>
-              <option value="client">Client</option>
-              <option value="admin">Admin</option>
-            </select>
-          </div> */}
           <div>
             <label htmlFor="fname">Name : </label>
             <input
@@ -79,8 +71,7 @@ function SignUp() {
               onChange={handleChange}
               className="input-field"
             />
-            {/* </div>
-          <div> */}
+
             <label htmlFor="lname"> </label>
             <input
               type="text"
@@ -132,14 +123,13 @@ function SignUp() {
             </button>
           </div>
         </form>
-        <div>
-          <p className="classAlreadyAMember">
+        <div className="classAlreadyAMember">
+          <p>
             Already a member? <a href="/login">Login</a>
           </p>
         </div>
       </div>
       <div className="classSignUpResponse">
-        {" "}
         {serverResponse && <p>{serverResponse}</p>}
       </div>
     </>

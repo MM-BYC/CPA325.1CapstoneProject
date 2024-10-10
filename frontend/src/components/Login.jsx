@@ -45,35 +45,51 @@ function Login() {
   };
 
   return (
-    <div className="classLogin">
-      <h2>Login</h2>
-      {serverResponse && <p>{serverResponse}</p>}
-      <form onSubmit={handleSubmit}>
+    <>
+      <div className="classLogin">
+        <h2>Login to Events</h2>
+      </div>
+      <div className="classSignUpForm gridParent">
+        <form onSubmit={handleSubmit}>
+          <div className="gridItem">
+            <label htmlFor="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="input-field"
+            />
+          </div>
+          <div className="gridItem">
+            <label htmlFor="password">Password: </label>
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              value={formData.password}
+              onChange={handleChange}
+              className="input-field"
+            />
+          </div>
+          <div className="gridItem">
+            <button
+              type="submit"
+              className="classSignUpButton"
+              disabled={submitButtonDisabled}
+            >
+              Submit
+            </button>
+          </div>
+        </form>
         <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
+          <p className="classAlreadyAMember">
+            Not a member yet? <a href="/SignUp">SignUp</a>
+          </p>
         </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <button type="submit" disabled={submitButtonDisabled}>
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -28,6 +28,14 @@ const userSchema = new Schema(
   },
   { timestamps: true }
 );
+/*
+ create an index on field lname 
+ 1 means ascending order
+ -1 means descending order
+*/
+
+userSchema.index({ lname: 1 });
+
 userSchema.plugin(uniqueValidator);
 //-->-->-->-->-->--> create the model
 module.exports = mongoose.model("User", userSchema);

@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.classSignUp {
+.classLogin {
   margin: 2em auto;
   border-width: 2px;
   width: 40%;
@@ -12,7 +12,7 @@
   justify-content: center;
   font-size: 2em;
 }
-.classSignUpResponse {
+.classLoginResponse {
   margin: 5em auto;
   border-width: 2px;
   width: 40%;
@@ -22,7 +22,7 @@
   color: lime;
 }
 
-.classSignUpForm {
+.classLoginForm {
   margin: 1em auto;
   padding: 2em;
   border-style: solid;
@@ -35,7 +35,7 @@
   font-size: 1.8em;
 }
 
-.classSignUpButton {
+.classLoginButton {
   margin: 1em;
   background-color: lightgray;
   color: black;
@@ -46,8 +46,4 @@
 
 .input-field {
   font-size: 1em;
-}
-
-.classAlreadyAMember {
-  font-style: italic;
 }
