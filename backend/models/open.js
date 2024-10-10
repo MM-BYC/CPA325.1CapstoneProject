@@ -13,7 +13,7 @@ const User = require("./user");
 const openSchema = new Schema(
   {
     creator: { type: String },
-    customer: {
+    resource: {
       type: String,
       // validate: {
       //   validator: async (value) => {
