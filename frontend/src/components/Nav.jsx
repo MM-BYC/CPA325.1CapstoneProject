@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./styleComponents/styleNav.css";
 /*  
 import{ Link } allows users to navigate between routes without full page reloads. 
 <Link to> this prop will be passed to the Router to look for matching path.
@@ -19,7 +20,7 @@ function Nav() {
           Membership
         </Link>
 
-        <Link to="/Event" className="navbarItem">
+        <Link to="/event" className="navbarItem">
           Events
         </Link>
 

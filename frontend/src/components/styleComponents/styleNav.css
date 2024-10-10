@@ -1,0 +1,8 @@
+.navbarItem {
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.navbarItem:hover {
+  text-decoration: none;
+  border-bottom: 15px solid red;
+}

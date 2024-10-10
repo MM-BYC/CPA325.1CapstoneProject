@@ -4,8 +4,8 @@ import "./styleComponents/styleEvent.css";
 function Event() {
   return (
     <>
-      <div>
-        <h1>Welcome to Event Page</h1>
+      <div className="classEventWelcome">
+        <h1>Schedule an Event</h1>
       </div>
     </>
   );

@@ -20,10 +20,10 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Navigate to="/Login" replace />} />
-        {/*Use Navigate to default to SignUp page*/}
-        <Route path="/Event" element={<Event />} />
-        <Route path="/SignUp" element={<SignUp />} />
+        {/*Use Navigate to default the SignUp page*/}
         <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Event" element={<Event />} />
         <Route path="/Pricing" element={<Pricing />} />
       </Routes>
     </>

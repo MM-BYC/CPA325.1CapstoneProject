@@ -4,6 +4,11 @@
 Author: Michael Marquez
 Project: PerScholas Capstone
 ```
+# Capstone Landing Page
+![Oct 10, 2024 Capstone Project completion - Landing Page](capstoneloginpage.png)
+#Capstone Membership Page
+![Oct 10, 2024 Capstone Project completion - Membership page Page](capstonemembershippage.png)
+
 ## Initial Commit [ ✅ ]
 -----------------
 ```
