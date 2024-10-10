@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
 //--//
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import SignUp from "./components/Signup";
+import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Event from "./components/Event";
 import Pricing from "./components/Pricing";
@@ -18,6 +19,8 @@ function App() {
     <>
       <Nav />
       <Routes>
+        <Route path="/" element={<Navigate to="/Login" replace />} />
+        {/*Use Navigate to default to SignUp page*/}
         <Route path="/Event" element={<Event />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />

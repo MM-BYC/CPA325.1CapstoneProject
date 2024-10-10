@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: white;
-  background-color:#213547;
+  background-color: #213547;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: blue;
+  color: rgb(3, 103, 41);
 }
 
 /* body {

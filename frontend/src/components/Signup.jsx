@@ -62,7 +62,7 @@ function SignUp() {
       <div className="classSignUpForm">
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="fname">Name : </label>
+            <label htmlFor="fname">Name </label>
             <input
               type="text"
               name="fname"
@@ -83,30 +83,33 @@ function SignUp() {
             />
           </div>
           <div>
-            <label htmlFor="email">Email: </label>
+            <label htmlFor="email">Email </label>
             <input
               type="email"
               name="email"
+              placeholder="email"
               value={formData.email}
               onChange={handleChange}
               className="input-field"
             />
           </div>
           <div>
-            <label htmlFor="password">Password: </label>
+            <label htmlFor="password">Password </label>
             <input
               type="password"
               name="password"
+              placeholder="password"
               value={formData.password}
               onChange={handleChange}
               className="input-field"
             />
           </div>
           <div>
-            <label htmlFor="confirmedPassword">Confirm Password: </label>
+            <label htmlFor="confirmedPassword">Confirm Password </label>
             <input
               type="password"
               name="confirmedPassword"
+              placeholder="confirm password"
               value={formData.confirmedPassword}
               onChange={handleChange}
               className="input-field"
@@ -119,7 +122,7 @@ function SignUp() {
               className="classSignUpButton"
               disabled={submitButtonDisbled}
             >
-              Submit
+              Sign Up
             </button>
           </div>
         </form>
