@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./styleComponents/styleLogin.css";
 import { useNavigate } from "react-router-dom";
+
 function Login() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -10,12 +11,18 @@ function Login() {
   });
 
   const [serverResponse, setServerResponse] = useState(null);
+  // useState for Server Response data
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
+
+  // here we need to see if user record was returned.
+  useEffect(() => {
+    console.log("Server Response:!!!", serverResponse);
+  }, [serverResponse]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -29,16 +36,19 @@ function Login() {
         timeout: 30000, //30 seconds
       });
 
-      setServerResponse(response.data);
-      navigate("/Event");
-      alert("Login successful!");
-    } catch (error) {
-      if (error.response.status === 401) {
-        alert("Invalid email or password");
-      } else {
-        alert("Login failed. Please try again.");
+      setServerResponse(JSON.stringify(response.data));
+      // save the data to serverResponse useState
+
+      const { user } = await response.data;
+      const { role, fname, lname, email, password } = user;
+      debugger;
+      if (email == formData.email && password == formData.password) {
+        navigate("/Event");
+        alert("Login successful!");
       }
-      setServerResponse(error.response.data);
+    } catch (error) {
+      console.log(`Error handleSubmit`, error);
+      alert("Login failed you again.");
     } finally {
       setSubmitButtonDisabled(false);
     }
@@ -120,26 +130,32 @@ function Login() {
           <div className="classSignUpForm gridParent">
             <form onSubmit={handleSubmit}>
               <div className="gridItem">
-                <label htmlFor="email">Username </label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="input-field"
-                />
+                <label htmlFor="email-input">
+                  Username
+                  <input
+                    id="email-input"
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="input-field"
+                  />
+                </label>
               </div>
               <div className="gridItem">
-                <label htmlFor="password">Password </label>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="password"
-                  value={formData.password}
-                  onChange={handleChange}
-                  className="input-field"
-                />
+                <label htmlFor="password-input">
+                  Password
+                  <input
+                    id="password-input"
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className="input-field"
+                  />
+                </label>
               </div>
               <div className="gridItem">
                 <button

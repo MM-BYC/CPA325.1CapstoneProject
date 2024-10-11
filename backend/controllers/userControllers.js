@@ -60,6 +60,10 @@ const userController = {
       const { email, password } = req.body;
       const user = await User.findOne({ email: email });
       console.log("Currently fetching user by email");
+      console.log(`Input from frontend email, password ${email}, ${password}`);
+      if (!user) {
+        return res.json({ message: "User not found" });
+      }
       res.json({ user: user });
     } catch (error) {
       res.status(400).json(error);

@@ -215,3 +215,77 @@ Error is catch for:
     * When the user clicks the Link, React Router checks the to prop against the path props of all Route components.
     * If a match is found, React Router renders the corresponding element prop (e.g., `<Settings logo={logo.settings}/>).
 ``` 
+
+### response.data
+```
+Lets talk about response.data returned to frontend from the backend server.
+Here is a user.js model document.
+    role        type: String 
+    fname       type: String
+    lname       type: String
+    email       type: String
+    password    type: String
+
+    Consider the code from component login.jsx 
+    This axios requesting data back by passing object email: and password: to the endpoint URL.
+    Requested data is cache to const response.
+
+        const response = await axios({
+        method: "post",
+        url: "http://localhost:3000/api/users/login",
+        data: { email: formData.email, password: formData.password },
+        timeout: 30000, //30 seconds
+      });
+
+        const { user } = await response.data;
+        const { role, fname, lname } = user;
+        response.data 
+
+    Assuming a record was found for the email and password,
+    response.data is an object with the following structure:
+
+    Type:
+        typeof response.data; // "object"
+
+    Properties:
+        response.data.user; // object
+        response.data.user._id; // string
+        response.data.user.role; // string
+        response.data.user.fname; // string
+        response.data.user.lname; // string
+        response.data.user.email; // string
+        response.data.user.password; // string
+        response.data.user.createdAt; // string
+        response.data.user.updatedAt; // string
+        response.data.user.__v; // number
+
+    To access the properties:
+        const { role } = response.data.user;
+        const fname = response.data.user.fname;
+
+    To de-structure: highly recommended in the frontend after a successful AXIOS method="post" in the frontend.
+        const { user } = response.data;
+        const { role, fname, lname } = user;    ▶️ ▶️ ▶️ is now available at field level of the document. e.g. console.log(role)
+
+    {
+  "user": {
+    "_id": "670686c10620ebf7b3885840",
+    "role": "admin",
+    "fname": "Jennifer",
+    "lname": "Daugherty",
+    "email": "emmasj@gmail.com",
+    "password": "Jpassword",
+    "createdAt": "2024-10-09T13:36:01.535Z",
+    "updatedAt": "2024-10-09T13:36:01.535Z",
+    "__v": 0
+  }
+}
+```
+### Response.data frontend (debug illustrating response.data)
+![Response data as seen on the frontend after a successful Axios method='post'](Reactchromeinspect.png)
+
+### Response.data frontend console
+![More response.data in the console](responsedatafrontend.png)
+
+### React component view
+![React component view](reactcomponent.png)

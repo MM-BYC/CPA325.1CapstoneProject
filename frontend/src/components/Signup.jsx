@@ -62,58 +62,67 @@ function SignUp() {
       <div className="classSignUpForm">
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="fname">Name </label>
-            <input
-              type="text"
-              name="fname"
-              placeholder="First Name"
-              value={formData.fname}
-              onChange={handleChange}
-              className="input-field"
-            />
+            <label htmlFor="fname">
+              Name
+              <input
+                type="text"
+                name="fname"
+                placeholder="First Name"
+                value={formData.fname}
+                onChange={handleChange}
+                className="input-field"
+              />
+            </label>
 
-            <label htmlFor="lname"> </label>
-            <input
-              type="text"
-              name="lname"
-              placeholder="Last Name"
-              value={formData.lname}
-              onChange={handleChange}
-              className="input-field"
-            />
+            <label htmlFor="lname">
+              <input
+                type="text"
+                name="lname"
+                placeholder="Last Name"
+                value={formData.lname}
+                onChange={handleChange}
+                className="input-field"
+              />
+            </label>
           </div>
           <div>
-            <label htmlFor="email">Email </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="input-field"
-            />
+            <label htmlFor="email">
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="input-field"
+              />
+            </label>
           </div>
           <div>
-            <label htmlFor="password">Password </label>
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              value={formData.password}
-              onChange={handleChange}
-              className="input-field"
-            />
+            <label htmlFor="password">
+              Password
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                value={formData.password}
+                onChange={handleChange}
+                className="input-field"
+              />
+            </label>
           </div>
           <div>
-            <label htmlFor="confirmedPassword">Confirm Password </label>
-            <input
-              type="password"
-              name="confirmedPassword"
-              placeholder="confirm password"
-              value={formData.confirmedPassword}
-              onChange={handleChange}
-              className="input-field"
-            />
+            <label htmlFor="confirmedPassword">
+              Confirm Password
+              <input
+                type="password"
+                name="confirmedPassword"
+                placeholder="confirm password"
+                value={formData.confirmedPassword}
+                onChange={handleChange}
+                className="input-field"
+              />
+            </label>
           </div>
           {passwordMismatch && <p>Passwords do not match</p>}
           <div>
