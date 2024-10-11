@@ -285,7 +285,7 @@ Here is a user.js model document.
 ![Response data as seen on the frontend after a successful Axios method='post'](Reactchromeinspect.png)
 
 ### Response.data frontend console
-![More response.data in the console](responsedatafrontend.png)
+![More response.data in the console](responsedatatofrontend.png)
 
 ### React component view
 ![React component view](reactcomponent.png)
