@@ -6,6 +6,7 @@ function Event() {
     <>
       <div className="classEventWelcome">
         <h1>Schedule an Event</h1>
+        <div className="box"></div>
       </div>
     </>
   );

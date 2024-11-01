@@ -59,7 +59,7 @@ cd CPA325.1CapstoneProject
 ![npm start to run the server](npmstart.png)
 
 ### Establish Database [ ✅ ]
-```
+
 1. create folder config
     1.1. create file connectToDb
         ▶️ require("dotenv").config()

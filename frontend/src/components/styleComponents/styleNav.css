@@ -2,7 +2,20 @@
   transition: border-bottom 0.2s ease-in-out;
 }
 
+.navbarItem {
+  transition: transform 0.2s ease-out;
+
+}
+
+.navbarItem:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .navbarItem:hover {
   text-decoration: none;
-  border-bottom: 15px solid red;
+  width: 150px;
+  text-align: center;
+  border-bottom: 5px solid gray;
+  border-radius: 45px;
 }

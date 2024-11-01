@@ -10,25 +10,23 @@ e.g. <Link to="/pricing"> passed to Router will look for path="/pricing" will th
 
 function Nav() {
   return (
-    <>
-      <div className="navbar">
-        <Link to="/login" className="navbarItem">
-          Home
-        </Link>
+    <div className="navbar">
+      <Link to="/login" className="navbarItem">
+        Home
+      </Link>
 
-        <Link to="/signUp" className="navbarItem">
-          Membership
-        </Link>
+      <Link to="/signUp" className="navbarItem">
+        Membership
+      </Link>
 
-        <Link to="/event" className="navbarItem">
-          Events
-        </Link>
+      <Link to="/event" className="navbarItem">
+        Events
+      </Link>
 
-        <Link to="/pricing" className="navbarItem">
-          Pricing
-        </Link>
-      </div>
-    </>
+      <Link to="/pricing" className="navbarItem">
+        Pricing
+      </Link>
+    </div>
   );
 }
 

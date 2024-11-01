@@ -15,6 +15,7 @@ function SignUp() {
   const [submitButtonDisbled, setSubmitButtonDisabled] = useState(false);
   const [serverResponse, setServerResponse] = useState(null);
   const [passwordMismatch, setPasswordMismatch] = useState(false);
+
   //-----------------------------// useState for confirmation email
 
   const handleChange = (event) => {
