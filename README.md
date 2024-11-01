@@ -60,6 +60,7 @@ cd CPA325.1CapstoneProject
 
 ### Establish Database [ ✅ ]
 
+```
 1. create folder config
     1.1. create file connectToDb
         ▶️ require("dotenv").config()
@@ -82,6 +83,7 @@ cd CPA325.1CapstoneProject
 ```
 
 ### Data Models
+
 ```    
 Field validation can enforce "unique" with a library mongoose-unique-validator 
 At the backend root folder
@@ -96,6 +98,7 @@ Inside the model e.g. user.js include these:
     ▶️ userSchema.plugin(uniqueValidator);
 ```
 ### Mongoose-Unique-validator
+
 ```
 Error is catch for:
     Password is required
@@ -104,7 +107,6 @@ Error is catch for:
 ![mongoose-unique-validator working](mongoose-unique-validator.png)
 
 ```
-
 4. create folder models
     4.1 create file user.js     
         // stores related user information   
@@ -146,7 +148,9 @@ Error is catch for:
 ```
 
 ## Frontend
+```
 -----------
+```
 
 ### Install React, cors [ ✅ ]
 
